@@ -1,0 +1,245 @@
+import json
+
+thislist = {
+ "Attack_on_titan" : {
+         "id": "A001",
+         "name" : "Shingeki no Kyojin",
+         "year" : "2013",
+         "country": "Japan",
+         "source" : "Manga",
+         "studio" : "MAPPA",
+         "type" : [
+               "action",
+               "military",
+               "mystery",
+               "super power",
+               "drama",
+               "fiction",
+               "shonen"
+            ],
+         "movie" : False,
+         "seasons": ["s1", "s2","s3","s4"],
+         "episodes" : 86,
+         "ended" : False
+         },
+                 
+"Demons slayer" : {
+         "id": "A002",
+         "name" : "Kimetsu no Yaiba",
+         "year" : "2019",
+         "country": "Japan",
+         "source" : "Manga",
+         "studio" : "UFOTABLE",
+         "type" : [
+               "action",
+               "historical",
+               "uncanny",
+               "devils",
+               "shonen"
+            ],
+         "movie" : False,
+         "seasons": ["s1", "s2","s3","s4"],
+         "episodes" : 44,
+         "ended" : False
+         },
+         
+"Jujutsu Kaisen" : {
+         "id": "A003",
+         "name" : "Jujutsu Kaisen",
+         "year" : "2020",
+         "country": "Japan",
+         "source" : "Manga",
+         "studio" : "MAPPA",
+         "type" : [
+               "action",
+               "horor",
+               "school",
+               "uncanny",
+               "devils",
+               "shonen"
+            ],
+         "movie" : True,  
+         "seasons": ["s1", "s2"],
+         "episodes" : 24,
+         "ended" : False
+         },
+         
+"Death Note" : {
+         "id": "A004",
+         "name" : "Death Note",
+         "year" : "2006",
+         "country": "Japan",
+         "source" : "Manga",
+         "studio" : "MADHOUSE",
+         "type" : [
+               "action",
+               "mystery",
+               "police",
+               "uncanny",
+               "suspence",
+               "shonen"
+            ],
+         "movie" : False,  
+         "seasons": "s1",
+         "episodes" : 37,
+         "ended" : True
+         },
+         
+"Mahoutsukai no Yame" : {
+         "id": "A005",
+         "name" : "Mahoutsukai no Yame",
+         "year" : "2016",
+         "country": "Japan",
+         "source" : "Manga",
+         "studio" : "WIT",
+         "type" : [
+               "fiction",
+               "magic",
+               "shonen"
+            ],
+         "movie" : False,  
+         "seasons": "s1",
+         "episodes" : 24,
+         "ended" : True
+         },
+         
+"Takt op.Destiny" : {
+         "id": "A006",
+         "name" : "Takt op.Destiny",
+         "year" : "2021",
+         "country": "Japan",
+         "source" : "null",
+         "studio" : "MADHOUSE MAPPA",
+         "type" : [
+               "action",
+               "fiction",
+               "music"
+            ],
+         "movie" : False,  
+         "seasons": "s1",
+         "episodes" : 12,
+         "ended" : "none"
+         },
+         
+"Eighty six" : {
+         "id": "A007",
+         "name" : "86",
+         "year" : "2021",
+         "country": "Japan",
+         "source" : "Novel",
+         "studio" : "A1-PICTURES",
+         "type" : [
+               "action",
+               "military",
+               "drama",
+               "science fiction",
+               "mika"
+            ],
+         "movie" : False,  
+         "seasons": ["s1","s2"],
+         "episodes" : 12,
+         "ended" : "none"
+         },
+         
+"One Piece" : {
+         "id": "A008",
+         "name" : "One Piece",
+         "year" : "1999",
+         "country": "Japan",
+         "source" : "Manga",
+         "studio" : "TOEI ANIMATION",
+         "type" : [
+               "action",
+               "adventures",
+               "comedy",
+               "super power",
+               "fiction",
+               "shonen"
+            ],
+         "movie" : True,  
+         "seasons": "",
+         "episodes" : 1002,
+         "ended" : False
+         },
+         
+"Cue" : {
+         "id": "A009",
+         "name" : "Cue!",
+         "year" : "2022",
+         "country": "Japan",
+         "source" : "Game",
+         "studio" : "YUMETA",
+         "type" :"music",
+         "movie" : False,  
+         "seasons": "s1",
+         "episodes" : 24,
+         "ended" : False
+         },
+         
+"Tokyo Ghoul" : {
+         "id": "A010",
+         "name" : "Tokyo Ghoul",
+         "year" : "2014",
+         "country": "Japan",
+         "source" : "Manga",
+         "studio" : "PIERROT",
+         "type" : [
+               "action",
+               "mystery",
+               "drama",
+               "uncanny",
+               "horor",
+               "senen"
+            ],
+         "movie" : False,  
+         "seasons": ["s1","s2","s3"],
+         "episodes" : 48,
+         "ended" : True
+         },
+         
+"Dororo" : {
+         "id": "B001",
+         "name" : "Dororo",
+         "year" : "2019",
+         "country": "Japan",
+         "source" : "Manga",
+         "studio" : "MAPPA",
+         "categories" : [
+               "action",
+               "adventures",
+               "devils",
+               "historical",
+               "uncanny",
+               "shonen"
+            ],
+         "movie" : False,  
+         "seasons": "s1",
+         "episodes" : 24,
+         "ended" : True
+         }     
+    }
+    
+
+  
+#afficher l'objet nommé Dororo  
+print(json.dumps(x["Dororo"], indent=4))   
+
+#afficher les 10 premiers objet
+for x in thislist:
+  print(x[10])
+def tri_recursion(x):
+  if(x > 0):
+    result = x + 1
+    print(x)
+  else:
+    result = 0
+  return x
+
+print("\n\n Les 10 premiers animes")
+tri_recursion(10)
+  
+
+#rps QST 3: objet
+#Binome Hammou Nadjet / Amar karima 
+
+
