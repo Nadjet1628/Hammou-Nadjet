@@ -19,7 +19,7 @@ thislist = {
             ],
          "movie" : False,
          "seasons": ["s1", "s2","s3","s4"],
-         "episodes" : 86,
+         "episodes" : 89,
          "ended" : False
          },
                  
@@ -240,6 +240,12 @@ tri_recursion(10)
   
 
 #rps QST 3: objet
+
+
+#tp2
+
+
+
 #Binome Hammou Nadjet / Amar karima 
 
 
